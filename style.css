@@ -1,0 +1,199 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: white;
+  color: rgb(90, 18, 18);
+}
+
+/* SOL MENÜ */
+
+.sidebar {
+  width: 180px;
+  height: 100vh;
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  background: #fff5f5;
+
+  padding: 15px;
+
+  border-right: 2px solid red;
+}
+
+/* BUTONLAR */
+
+.sidebar button {
+  width: 100%;
+
+  margin-top: 10px;
+
+  padding: 12px;
+
+  border: none;
+
+  background: #ffe5e5;
+
+  color: darkred;
+
+  font-weight: bold;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.sidebar button:hover {
+  background: red;
+  color: white;
+}
+
+/* ANA ALAN */
+
+.main {
+  padding: 30px;
+}
+
+/* İÇERİK */
+
+.content {
+  max-width: 900px;
+}
+
+/* RESİM */
+
+.hero {
+  height: 400px;
+
+  width: 100%;
+
+  background: url("images/bg.jpg") center/cover no-repeat;
+
+  background-size: cover;
+
+  background-position: center;
+
+  border-radius: 10px;
+
+  margin-bottom: 30px;
+}
+
+/* YAZILAR */
+
+.content h1 {
+  font-size: 36px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* FORM */
+
+input,
+select,
+textarea {
+  width: 100%;
+
+  padding: 12px;
+
+  margin-top: 15px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+}
+
+textarea {
+  height: 120px;
+}
+
+/* GÖNDER BUTONU */
+
+.send-btn {
+  margin-top: 20px;
+
+  padding: 14px;
+
+  width: 100%;
+
+  border: none;
+
+  background: darkred;
+
+  color: white;
+
+  font-size: 16px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background: red;
+}
+
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: #111;
+  color: #fff;
+  padding: 14px 16px;
+  border-radius: 14px;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.25s ease;
+
+  font-family: system-ui, sans-serif;
+  min-width: 220px;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast .icon {
+  background: #22c55e;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.toast .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.toast .content strong {
+  font-size: 14px;
+}
+
+.toast .content span {
+  font-size: 12px;
+  opacity: 0.8;
+}

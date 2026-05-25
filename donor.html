@@ -1,0 +1,86 @@
+<!-- donor.html -->
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kan ve Donör</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+  <button onclick="location.href='index.html'">
+    Hakkımda
+  </button>
+
+  <button onclick="location.href='bilgilendirme.html'">
+    Bilgilendirme
+  </button>
+
+  <button onclick="location.href='donor.html'">
+    Kan ve Donör
+  </button>
+
+</div>
+
+<div class="main" style="margin-left:220px;">
+
+  <div class="content">
+    <form id="donorForm">
+
+    <h1>Kan ve Donör Sistemi</h1>
+
+    <input type="text" placeholder="Ad Soyad">
+
+    <input type="text" placeholder="Telefon Numarası">
+
+    <input type="email" placeholder="E-Posta">
+
+    <input type="il" placeholder="il">
+
+    <input type="ilçe" placeholder="ilçe">
+
+
+
+    <select>
+      <option>Kan Grubu Seçiniz</option>
+      <option>A+</option>
+      <option>A-</option>
+      <option>B+</option>
+      <option>B-</option>
+      <option>AB+</option>
+      <option>AB-</option>
+      <option>0+</option>
+      <option>0-</option>
+    </select>
+
+    <textarea placeholder="Acil durum açıklaması"></textarea>
+
+     <button class="send-btn">
+      Talebi Gönder
+     </button>
+   </form>
+
+  </div>
+
+</div>
+
+<script SRC="script.js"></script>
+
+<div id="toast" class="toast">
+  <span class="icon">✔</span>
+  <div class="content">
+    <strong>Başarılı</strong>
+    <span id="toastText">Talebiniz Başarıyla iletilmiştir</span>
+  </div>
+</div>
+
+</body>
+</html>
