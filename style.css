@@ -63,7 +63,7 @@ body {
 /* İÇERİK */
 
 .content {
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 /* RESİM */
@@ -196,4 +196,19 @@ textarea {
 .toast .content span {
   font-size: 12px;
   opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container {
+    padding: 10px;
+  }
 }
