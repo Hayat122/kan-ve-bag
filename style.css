@@ -73,9 +73,7 @@ body {
 
   width: 100%;
 
-  background: url("images/bg.jpg") center/cover no-repeat;
-
-  background-size: cover;
+  background: url("images/bg.jpg") center/contain no-repeat;
 
   background-position: center;
 
