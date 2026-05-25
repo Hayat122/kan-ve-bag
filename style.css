@@ -75,6 +75,8 @@ body {
 
   background: url("images/bg.jpg") center/contain no-repeat;
 
+  background-position: cover;
+
   background-position: center;
 
   border-radius: 10px;
